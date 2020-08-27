@@ -1,33 +1,26 @@
-# lexer V0.2 
+# lexer v0.2 
 
 Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github.com/EIA-University/LogosEIA/blob/master/assets/png/logo-eia-icon.png?raw=true)
 
-Lexer es una herramienta del linea de comando que Analiza sintaticamente un archivo.
 
 ## Comenzando :rocket:
 
 ### Pre-requisitos
 
-* pyenv | [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
-* pipenv | [https://pipenv-es.readthedocs.io/es/latest/](https://pipenv-es.readthedocs.io/es/latest/)
-
-* Django | [https://docs.djangoproject.com/](https://docs.djangoproject.com/)
-* Keras | [https://keras.io](https://keras.io)
-* Mysql Workbench | [https://www.mysql.com/products/workbench/](https://www.mysql.com/products/workbench/)
-* Sequel Pro |   [https://www.sequelpro.com](https://www.sequelpro.com)
+* 
 
 :heavy_exclamation_mark: ***NOTA: Para Windows, instalar la version de [pyenv-win](https://github.com/pyenv-win/pyenv-win#installation)***
 
 ### Importar Un Proyecto
 para bajar el proyecto:
 ```
- git clone https://github.com/zulo30/grabus-app.git backend
+ git clone https://github.com/zulo30/lexer.git
 ```
 para correr el proyecto:
 
 1. bajar las dependecias de python con pipenv.
     ```
-    pipenv install
+    comando 
     ```
 2. bajar las depedencias de frontend con npm.
     ```
@@ -53,14 +46,7 @@ para correr el proyecto:
     
     ....
     ```
-    
-    :heavy_exclamation_mark: ***NOTA: Para MacOS, seguir la guía de [instalación](https://ruddra.com/posts/install-mysqlclient-macos/)***
 
-
-7. Migrar la base de datos 
-    ```
-    pipenv run migrate
-    ```
 
 ## Uso
  para correr el servidor: 
@@ -70,12 +56,7 @@ para correr el proyecto:
 
 ## Recursos
 
-* django docs | [https://docs.djangoproject.com/](https://docs.djangoproject.com/)
-* setting up django prject like a pro | [https://medium.com/@fceruti/](https://medium.com/@fceruti/setting-up-a-django-project-like-a-pro-a847a9867f9d)
-* django-vue integration tutorial | [https://github.com/michaelbukachi/django-vuejs-tutorial/](https://github.com/michaelbukachi/django-vuejs-tutorial/wiki/Django-Vue.js-Integration-Tutorial)
-* integrating django and vue using webpack | [https://medium.com/@rodrigosmaniotto/](https://medium.com/@rodrigosmaniotto/integrating-django-and-vuejs-with-vue-cli-3-and-webpack-loader-145c3b98501a)
-* django webpack loader | [https://github.com/owais/django-webpack-loader](https://github.com/owais/django-webpack-loader)
-* mysqlclient on macos | [https://ruddra.com/posts/install-mysqlclient-macos/](https://ruddra.com/posts/install-mysqlclient-macos/) 
+* 
 
 
 ## Contribuir:

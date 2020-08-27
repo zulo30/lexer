@@ -17,9 +17,17 @@ ASANFLAGS  = -fsanitize=address
 ASANFLAGS += -fno-common
 ASANFLAGS += -fno-omit-frame-pointer
 
+.PHONY: build
+build: build/main.out
+	@./build/main.out
+	
+build/main.out: src/*.c src/*.h
+	@echo Compiling $@
+	@$(CC) $(CFLAGS) src/*.c  -o build/main.out $(LIBS)
+
 .PHONY: test
-test: tests.out
-	@./tests.out
+test: build/tests.out
+	@./build/tests.out
 
 .PHONY: memcheck
 memcheck: test/*.c src/*.c src/*.h
@@ -30,8 +38,8 @@ memcheck: test/*.c src/*.c src/*.h
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.out *.out.dSYM
+	rm -rf build/*.o build/*.out build/*.out.dSYM
 
-tests.out: test/*.c src/*.c src/*.h
+build/tests.out: test/*.c src/*.c src/*.h
 	@echo Compiling $@
-	@$(CC) $(CFLAGS) src/*.c test/vendor/unity.c test/*.c -o tests.out $(LIBS)
+	@$(CC) $(CFLAGS) src/*.c test/vendor/unity.c test/*.c -o build/tests.out $(LIBS)
