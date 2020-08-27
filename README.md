@@ -11,20 +11,18 @@ Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github
 * Unity Testing | [http://www.throwtheswitch.org/unity](http://www.throwtheswitch.org/unity)
 * Make Building tool | [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
 
-:heavy_exclamation_mark: ***NOTA: Para Windows, instalar la version de [pyenv-win](https://github.com/pyenv-win/pyenv-win#installation)***
-
 ### Importar Un Proyecto
 para bajar el proyecto:
 ```
  git clone https://github.com/zulo30/lexer.git
 ```
 
-## Uso
+## Uso :checkered_flag:
  para correr el programa:
  ```
  make build
  ```
-## Pruebas Unitarias
+## Pruebas Unitarias :microscope:
  para correr las pruebas unitarias:
  ```
  make test
