@@ -1,8 +1,8 @@
-# lexer | Lexical Analysis Tool Written in C 
+# lexer V0.2 
 
-Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github.com/EIA-University/LogosEIA/blob/master/assets/png/logo-eia-icon.png?raw=true)
+Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github.com/EIA-University/LogosEIA/blob/master/assets/png/logo-eia-icon.png?raw=true)
 
-grabus es una aplicacíon colaborativa para digitalizar diagramas uml y tiquetes.
+Lexer es una herramienta del linea de comando que Analiza sintaticamente un archivo.
 
 ## Comenzando :rocket:
 
