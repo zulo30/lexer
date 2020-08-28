@@ -11,7 +11,7 @@ Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github
 * Unity Testing | [http://www.throwtheswitch.org/unity](http://www.throwtheswitch.org/unity)
 * Make Building tool | [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
 
-### Importar Un Proyecto
+### Importar un proyecto
 para bajar el proyecto:
 ```
  git clone https://github.com/zulo30/lexer.git
