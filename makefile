@@ -3,6 +3,9 @@
 
 LIBS = -lm
 
+ALL_SRCS = $(wildcard src/*.c)
+SRCS     = $(filter-out src/main.c, $(ALL_SRCS))
+
 ###
 CFLAGS  = -std=c99
 CFLAGS += -g
@@ -30,9 +33,9 @@ test: build/tests.out
 	@./build/tests.out
 
 .PHONY: memcheck
-memcheck: test/*.c src/*.c src/*.h
+memcheck: test/*.c  $(SRCS) src/*.h
 	@echo Compiling $@
-	@$(CC) $(ASANFLAGS) $(CFLAGS) src/*.c test/vendor/unity.c test/*.c -o memcheck.out $(LIBS)
+	@$(CC) $(ASANFLAGS) $(CFLAGS) $(SRCS) test/vendor/unity.c test/*.c -o memcheck.out $(LIBS)
 	@./memcheck.out
 	@echo "Memory check passed"
 
@@ -40,6 +43,6 @@ memcheck: test/*.c src/*.c src/*.h
 clean:
 	rm -rf build/*.o build/*.out build/*.out.dSYM
 
-build/tests.out: test/*.c src/*.c src/*.h
+build/tests.out: test/*.c $(SRCS) src/*.h
 	@echo Compiling $@
-	@$(CC) $(CFLAGS) src/*.c test/vendor/unity.c test/*.c -o build/tests.out $(LIBS)
+	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c test/*.c -o build/tests.out $(LIBS)
