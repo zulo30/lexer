@@ -4,7 +4,9 @@
 LIBS = -lm
 
 ALL_SRCS = $(wildcard src/*.c)
-SRCS     = $(filter-out src/main.c, $(ALL_SRCS))
+ALL_SRCS += $(wildcard src/vendor/*.c)
+ALL_SRCS += $(wildcard src/utils/*.c)
+SRCS     = $(filter-out src/lexer.c, $(ALL_SRCS))
 
 ###
 CFLAGS  = -std=c99
@@ -26,7 +28,7 @@ build: build/main.out
 	
 build/main.out: src/*.c src/*.h
 	@echo Compiling $@
-	@$(CC) $(CFLAGS) src/*.c  -o build/main.out $(LIBS)
+	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o build/main.out $(LIBS)
 
 .PHONY: test
 test: build/tests.out

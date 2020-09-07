@@ -8,8 +8,13 @@ Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github
 ### Pre-requisitos
 
 * GNU Compiler Collection | [https://gcc.gnu.org](https://gcc.gnu.org)
-* Unity Testing | [http://www.throwtheswitch.org/unity](http://www.throwtheswitch.org/unity)
 * Make Building tool | [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
+
+### Librerias de terceros
+
+* Unity Testing | [http://www.throwtheswitch.org/unity](http://www.throwtheswitch.org/unity)
+* Libfort | [https://github.com/seleznevae/libfort](https://github.com/seleznevae/libfort)
+* cjson| [https://github.com/DaveGamble/cJSON](https://github.com/DaveGamble/cJSON)
 
 ### Importar un proyecto
 para bajar el proyecto:
@@ -27,9 +32,8 @@ para bajar el proyecto:
  ```
  make test
  ```
-## Recursos
-
-* 
+## Documentacion
+para construición de la documentacion: 
 
 
 ## Contribuir:
