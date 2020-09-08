@@ -34,9 +34,17 @@ build/main.out: src/*.c
 	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o build/main.out $(LIBS)
 
 .PHONY: test
-test: queue.test.out table.test.out
-	@./queue.test.out
-	@./table.test.out
+test: build/queue.test.out build/table.test.out
+	@echo =======================
+	@echo Running Test Suites
+	@echo -----------------------
+	@echo  1.	Queue Test Suite 
+	@echo -----------------------
+	@./build/queue.test.out
+	@echo -----------------------
+	@echo  2.	Table Test Suite 
+	@echo -----------------------
+	@./build/table.test.out
 
 .PHONY: memcheck
 memcheck: test/*.c  $(SRCS) 
@@ -49,8 +57,7 @@ memcheck: test/*.c  $(SRCS)
 clean:
 	rm -rf build/*.o build/*.out build/*.out.dSYM
 
-%.test.out:  $(TEST_DIR)/test_%.c $(TEST_RNS)/test_%_runner.c
-	@echo Compiling $@...
+build/%.test.out:  $(TEST_DIR)/test_%.c $(TEST_RNS)/test_%_runner.c
 	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c $^ -o $@ $(LIBS)
 
 test/test_*.c: 
