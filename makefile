@@ -49,20 +49,12 @@ memcheck: test/*.c  $(SRCS)
 clean:
 	rm -rf build/*.o build/*.out build/*.out.dSYM
 
-queue.test.out:  $(TEST_DIR)/test_queue.c $(TEST_RNS)/test_queue_runner.c
+%.test.out:  $(TEST_DIR)/test_%.c $(TEST_RNS)/test_%_runner.c
 	@echo Compiling $@...
 	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c $^ -o $@ $(LIBS)
 
+test/test_*.c: 
+	@touch ./$@
 
-table.test.out:  $(TEST_DIR)/test_table.c $(TEST_RNS)/test_table_runner.c
-	@echo Compiling $@...
-	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c $^ -o $@ $(LIBS)
-
-test/test_queue.c: 
-	@touch ./$@
-test/test_table.c: 
-	@touch ./$@
-test/test_runners/test_queue_runner.c: 
-	@touch ./$@
-test/test_runners/test_table_runner.c: 
+test/test_runners/test_*_runner.c: 
 	@touch ./$@
