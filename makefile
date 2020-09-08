@@ -8,6 +8,9 @@ ALL_SRCS += $(wildcard src/vendor/*.c)
 ALL_SRCS += $(wildcard src/utils/*.c)
 SRCS     = $(filter-out src/lexer.c, $(ALL_SRCS))
 
+TEST_DIR = test
+TEST_RNS = test/test_runners
+
 ###
 CFLAGS  = -std=c99
 CFLAGS += -g
@@ -26,17 +29,18 @@ ASANFLAGS += -fno-omit-frame-pointer
 build: build/main.out
 	@./build/main.out
 	
-build/main.out: src/*.c src/*.h
+build/main.out: src/*.c
 	@echo Compiling $@
 	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o build/main.out $(LIBS)
 
 .PHONY: test
-test: build/tests.out
-	@./build/tests.out
+test: queue.test.out table.test.out
+	@./queue.test.out
+	@./table.test.out
 
 .PHONY: memcheck
-memcheck: test/*.c  $(SRCS) src/*.h
-	@echo Compiling $@
+memcheck: test/*.c  $(SRCS) 
+	@echo Compiling $@...
 	@$(CC) $(ASANFLAGS) $(CFLAGS) $(SRCS) test/vendor/unity.c test/*.c -o memcheck.out $(LIBS)
 	@./memcheck.out
 	@echo "Memory check passed"
@@ -45,6 +49,20 @@ memcheck: test/*.c  $(SRCS) src/*.h
 clean:
 	rm -rf build/*.o build/*.out build/*.out.dSYM
 
-build/tests.out: test/*.c $(SRCS) src/*.h
-	@echo Compiling $@
-	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c test/*.c -o build/tests.out $(LIBS)
+queue.test.out:  $(TEST_DIR)/test_queue.c $(TEST_RNS)/test_queue_runner.c
+	@echo Compiling $@...
+	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c $^ -o $@ $(LIBS)
+
+
+table.test.out:  $(TEST_DIR)/test_table.c $(TEST_RNS)/test_table_runner.c
+	@echo Compiling $@...
+	@$(CC) $(CFLAGS) $(SRCS) test/vendor/unity.c $^ -o $@ $(LIBS)
+
+test/test_queue.c: 
+	@touch ./$@
+test/test_table.c: 
+	@touch ./$@
+test/test_runners/test_queue_runner.c: 
+	@touch ./$@
+test/test_runners/test_table_runner.c: 
+	@touch ./$@

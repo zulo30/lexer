@@ -11,7 +11,7 @@ void setUp(void) {}
 void tearDown(void) {}
 
 // Defines a single test.
-static void test_enqueue_item(void)
+void test_enqueue_item(void)
 {
   struct Queue *queue = createQueue(5);
   int res = enqueue(queue, 'a');
@@ -19,7 +19,7 @@ static void test_enqueue_item(void)
   TEST_ASSERT_TRUE(res);
 }
 
-static void test_dequeue_item(void)
+void test_dequeue_item(void)
 {
   struct Queue *queue = createQueue(5);
   enqueue(queue, 'a');
@@ -27,20 +27,20 @@ static void test_dequeue_item(void)
 
   TEST_ASSERT_TRUE(res);
 }
-static void test_if_queue_is_empty(void)
+void test_if_queue_is_empty(void)
 {
   struct Queue *queue = createQueue(5);
 
   TEST_ASSERT_TRUE(isEmpty(queue));
 }
-static void test_if_queue_is_full(void)
+void test_if_queue_is_full(void)
 {
   struct Queue *queue = createQueue(1);
   enqueue(queue, 'a');
 
   TEST_ASSERT_TRUE(isFull(queue));
 }
-static void test_dequeue_all(void)
+void test_dequeue_all(void)
 {
   struct Queue *queue = createQueue(6);
 
@@ -55,16 +55,17 @@ static void test_dequeue_all(void)
 
   TEST_ASSERT_EQUAL_STRING(expected, actual);
 }
+
 // Runs the test(s)
-int main(void)
-{
-  UnityBegin("test/test_table.c");
+// int main(void)
+// {
+//   UNITY_BEGIN();
 
-  RUN_TEST(test_enqueue_item);
-  RUN_TEST(test_dequeue_item);
-  RUN_TEST(test_if_queue_is_full);
-  RUN_TEST(test_if_queue_is_empty);
-  RUN_TEST(test_dequeue_all);
+//   RUN_TEST(test_enqueue_item);
+//   RUN_TEST(test_dequeue_item);
+//   RUN_TEST(test_if_queue_is_full);
+//   RUN_TEST(test_if_queue_is_empty);
+//   RUN_TEST(test_dequeue_all);
 
-  return UnityEnd();
-}
+//   return UnityEnd();
+// }

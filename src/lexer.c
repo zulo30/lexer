@@ -1,8 +1,9 @@
 // table_symbols size 11030
 
+#include "./utils/queue.h"
+#include "./utils/table.h"
 #include "./vendor/cjson.h"
 #include "./vendor/fort.h"
-#include "table.h"
 #include <stdio.h>
 
 int main(void)
