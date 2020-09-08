@@ -33,6 +33,11 @@ build/main.out: src/*.c
 	@echo Compiling $@
 	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o build/main.out $(LIBS)
 
+	
+lexer: $(ALL_SRCS)
+	@echo Compiling $@
+	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o lexer $(LIBS)
+
 .PHONY: test
 test: build/queue.test.out build/table.test.out
 	@echo =======================

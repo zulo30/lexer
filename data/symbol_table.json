@@ -1,410 +1,536 @@
 {
-  "SymbolsData":[
+  "symbol_data": [
     {
-      "Name":"Byte",
-      "Symbol":"byte",
-      "Type": [ "tipodedatoprimitivo", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
+      "name": "Byte",
+      "symbol": "byte",
+      "type": [
+        "tipodedatoprimitivo",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Function",
+      "symbol": "function",
+      "type": [
+        "palabrareservada"
+      ],
+      "description": "son palabras que asignan funciones especificas",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "While",
+      "symbol": "while",
+      "type": [
+        "controldeflujo",
+        "palabrareservada"
+      ],
+      "description": "uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Short",
+      "symbol": "short",
+      "type": [
+        "tipodedatoprimitivo",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Int",
+      "symbol": "int",
+      "type": [
+        "tipodedatoprimitivo",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Long",
+      "symbol": "long",
+      "type": [
+        "tipodedatoprimitivo",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Char",
+      "symbol": "char",
+      "type": [
+        "tipodedatoprimitivo",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Float",
+      "symbol": "float",
+      "type": [
+        "tipodedatoreal",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Double",
+      "symbol": "double",
+      "type": [
+        "tipodedatoreal",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "String",
+      "symbol": "String",
+      "type": [
+        "tipodedatoreal",
+        "palabrareservada"
+      ],
+      "description": "determina el dominio del dato",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "",
+      "symbol": "",
+      "type": [
+        "tipodedato"
+      ],
+      "description": "indica que el dato es vacío",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": true
+    },
+    {
+      "name": "opSuma",
+      "symbol": "+",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "realiza la operación matematica: suma",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "opResta",
+      "symbol": "-",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "realiza la operación matematica :resta",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "opMultipilcacion",
+      "symbol": "*",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "realiza la operación matematica: multiplicación",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "opDivision",
+      "symbol": "/",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "realiza la operación matematica: división",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "opModulo",
+      "symbol": "%",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "realiza la operación matematica: MOD (residuo)",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "opIncrementar",
+      "symbol": "++",
+      "type": [
+        "separador",
+        "operadoraritmetico"
+      ],
+      "description": "incrementa en una unidad",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "Menor",
+      "symbol": "<",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "compara dos elementos, ayuda a conocer que variable es menor o mayor",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "Mayor",
+      "symbol": ">",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "compara dos elementos, ayuda a conocer que variable es menor o mayor",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "menorIgual",
+      "symbol": "<=",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "mayorIgual",
+      "symbol": ">=",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "Diferente",
+      "symbol": "!=",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "Igual",
+      "symbol": "==",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "indica igualdad matematica",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "opAsignacion",
+      "symbol": "=",
+      "type": [
+        "separador",
+        "operadorrelacional"
+      ],
+      "description": "indica igualdad matematica",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "logAnd",
+      "symbol": "&&",
+      "type": [
+        "separador",
+        "operadorlogico"
+      ],
+      "description": "determina si ambos valores son verdaderos o no",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "logOr",
+      "symbol": "||",
+      "type": [
+        "separador",
+        "operadorlogico"
+      ],
+      "description": "determina si algunos de los dos valores se cumple o no",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "logNot",
+      "symbol": "!NOT",
+      "type": [
+        "separador",
+        "operadorlogico"
+      ],
+      "description": "niega",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": false
+    },
+    {
+      "name": "parentesisDer",
+      "symbol": "(",
+      "type": [
+        "separador",
+        "operadoragrupacion"
+      ],
+      "description": "ayuda a dar orden a una expresión",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "parentesisIzq",
+      "symbol": ")",
+      "type": [
+        "separador",
+        "operadoragrupacion"
+      ],
+      "description": "ayuda a dar orden a una expresión",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "corchetesIzq",
+      "symbol": "{",
+      "type": [
+        "separador",
+        "operadoragrupacion"
+      ],
+      "description": "abre o cierra código",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "corchetesDer",
+      "symbol": "}",
+      "type": [
+        "separador",
+        "operadoragrupacion"
+      ],
+      "description": "abre o cierra código",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "Espacio",
+      "symbol": " ",
+      "type": [
+        "separador"
+      ],
+      "description": "separa y ayuda a organizar el codigo",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "Punto",
+      "symbol": ".",
+      "type": [
+        "separador"
+      ],
+      "description": "permite llamar  funciones",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "puntoComa",
+      "symbol": ";",
+      "type": [
+        "separador"
+      ],
+      "description": "organiza el codigo por sentencias",
+      "is_an_ending": true,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "comillasDobles",
+      "symbol": "\"",
+      "type": [
+        "separador",
+        "operadordeagrupacion"
+      ],
+      "description": "permite copiar una cadena de caracteres",
+      "is_an_ending": false,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "Tabulador",
+      "symbol": "\t",
+      "type": [
+        "separador"
+      ],
+      "description": "permite detectar tabulaciones",
+      "is_an_ending": true,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "saltoDeLinea",
+      "symbol": "\n",
+      "type": [
+        "separador",
+        "separadorlineas"
+      ],
+      "description": "permite detectar tabulaciones",
+      "is_an_ending": true,
+      "is_a_separator": true,
+      "is_a_char": true
+    },
+    {
+      "name": "Function",
+      "symbol": "function",
+      "type": [
+        "palabrareservada",
+        "palabrareservada"
+      ],
+      "description": "permite crear funciones",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
+    },
+    {
+      "name": "Begin",
+      "symbol": "BEGIN",
+      "type": [
+        "palabrareservada",
+        "palabrareservada"
+      ],
+      "description": "determina donde inicia el bloque de código",
+      "is_an_ending": false,
       "IsIrrelevant": false,
-      "IsChar" : false 
+      "is_a_char": false
     },
     {
-      "Name":"Function",
-      "Symbol":"function", 
-      "Type":["palabrareservada",""],
-      "Description":"son palabras que asignan funciones especificas",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
+      "name": "End",
+      "symbol": "END",
+      "type": [
+        "palabrareservada",
+        "palabrareservada"
+      ],
+      "description": "determina donde acaba el bloque de código",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     },
     {
-      "Name":"While",
-      "Symbol":"while",
-      "Type": [ "controldeflujo", "palabrareservada" ],
-      "Description":"uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
+      "name": "Var",
+      "symbol": "var",
+      "type": [
+        "palabrareservada"
+      ],
+      "description": "permite crear una variable",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     },
     {
-      "Name":"Short",
-      "Symbol":"short",
-      "Type": [ "tipodedatoprimitivo", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
+      "name": "For",
+      "symbol": "for",
+      "type": [
+        "controldeflujo",
+        "palabrareservada"
+      ],
+      "description": "uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     },
     {
-      "Name":"Int",
-      "Symbol":"int",
-      "Type": [ "tipodedatoprimitivo", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
+      "name": "If",
+      "symbol": "if",
+      "type": [
+        "controldeflujo",
+        "palabrareservada"
+      ],
+      "description": "ayuda a tomar desiciones",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     },
     {
-      "Name":"Long",
-      "Symbol":"long",
-      "Type": [ "tipodedatoprimitivo", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
+      "name": "Else",
+      "symbol": "else",
+      "type": [
+        "controldeflujo",
+        "palabrareservada"
+      ],
+      "description": "ayuda a tomar desiciones",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     },
     {
-      "Name":"Char",
-      "Symbol":"char",
-      "Type": [ "tipodedatoprimitivo", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Float",
-      "Symbol":"float",
-      "Type": [ "tipodedatoreal", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Double",
-      "Symbol":"double",
-      "Type": [ "tipodedatoreal", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"String",
-      "Symbol":"String",
-      "Type": [ "tipodedatoreal", "palabrareservada" ],
-      "Description":"determina el dominio del dato",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"",
-      "Symbol":"", 
-      "Type":["tipodedato"],
-      "Description":"indica que el dato es vacío",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"opSuma",
-      "Symbol":"+", 
-      "Type":["operadoraritmetico"],
-      "Description":"realiza la operación matematica: suma",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"opResta",
-      "Symbol":"-", 
-      "Type":["operadoraritmetico"],
-      "Description":"realiza la operación matematica :resta",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"opMultipilcacion",
-      "Symbol":"*", 
-      "Type":["operadoraritmetico"],
-      "Description":"realiza la operación matematica: multiplicación",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"opDivision",
-      "Symbol":"/", 
-      "Type":["operadoraritmetico"],
-      "Description":"realiza la operación matematica: división",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"opModulo",
-      "Symbol":"%", 
-      "Type":["operadoraritmetico"],
-      "Description":"realiza la operación matematica: MOD (residuo)",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"opIncrementar",
-      "Symbol":"++", 
-      "Type":["operadoraritmetico"],
-      "Description":"incrementa en una unidad",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Menor",
-      "Symbol":"<", 
-      "Type":["operadorrelacional"],
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"Mayor",
-      "Symbol":">", 
-      "Type":["operadorrelacional"],
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"menorIgual",
-      "Symbol":"<=", 
-      "Type":["operadorrelacional"],
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"mayorIgual",
-      "Symbol":">=", 
-      "Type":["operadorrelacional"],
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Diferente",
-      "Symbol":"!=", 
-      "Type":["operadorrelacional"],
-      "Description":"compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Igual",
-      "Symbol":"==", 
-      "Type":["operadorrelacional"],
-      "Description":"indica igualdad matematica",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"opAsignacion",
-      "Symbol":"=",
-      "Type": [ "operadorrelacional", "operadoraritmetico" ],
-      "Description":"indica igualdad matematica",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"logAnd",
-      "Symbol":"&&", 
-      "Type":["operadorlogico"],
-      "Description":"determina si ambos valores son verdaderos o no",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"logOr",
-      "Symbol":"||", 
-      "Type":["operadorlogico"],
-      "Description":"determina si algunos de los dos valores se cumple o no",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"logNot",
-      "Symbol":"!NOT", 
-      "Type":["operadorlogico"],
-      "Description":"niega",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"parentesisDer",
-      "Symbol":"(", 
-      "Type":["operadoragrupacion"],
-      "Description":"ayuda a dar orden a una expresión",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"parentesisIzq",
-      "Symbol":")", 
-      "Type":["operadoragrupacion"],
-      "Description":"ayuda a dar orden a una expresión",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"corchetesIzq",
-      "Symbol":"{", 
-      "Type":["operadoragrupacion"],
-      "Description":"abre o cierra código",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"corchetesDer",
-      "Symbol":"}", 
-      "Type":["operadoragrupacion"],
-      "Description":"abre o cierra código",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"Espacio",
-      "Symbol":" ", 
-      "Type":["separador"],
-      "Description":"separa y ayuda a organizar el codigo",
-      "IsEnding": false,
-      "IsIrrelevant": true,
-      "IsChar" : true 
-    },
-    {
-      "Name":"Punto",
-      "Symbol":".", 
-      "Type":["separador"],
-      "Description":"permite llamar  funciones",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true 
-    },
-    {
-      "Name":"puntoComa",
-      "Symbol":";", 
-      "Type":["separador"],
-      "Description":"organiza el codigo por sentencias",
-      "IsEnding": true,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"comillasDobles",
-      "Symbol":"\"", 
-      "Type":["separador"],
-      "Description":"permite copiar una cadena de caracteres",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : true
-    },
-    {
-      "Name":"Tabulador",
-      "Symbol":"\t", 
-      "Type":["separador"],
-      "Description":"permite detectar tabulaciones",
-      "IsEnding": true,
-      "IsIrrelevant": true,
-      "IsChar" : true
-    },
-    {
-      "Name":"saltoDeLinea",
-      "Symbol":"\n", 
-      "Type":["separador"],
-      "Description":"permite detectar tabulaciones",
-      "IsEnding": true,
-      "IsIrrelevant": true,
-      "IsChar" : true 
-    },
-    {
-      "Name":"Function",
-      "Symbol":"function",
-      "Type": [ "palabrareservada", "palabrareservada" ],
-      "Description":"permite crear funciones",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Begin",
-      "Symbol":"BEGIN",
-      "Type": [ "palabrareservada", "palabrareservada" ],
-      "Description":"determina donde inicia el bloque de código",
-      "IsEnding": false,
-      "IsIrrelevant":false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"End",
-      "Symbol":"END",
-      "Type": [ "palabrareservada", "palabrareservada" ],
-      "Description":"determina donde acaba el bloque de código",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"Var",
-      "Symbol":"var",
-      "Type": [ "palabrareservada", "palabrareservada" ],
-      "Description":"permite crear una variable",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar": false 
-    },
-    {
-      "Name":"For",
-      "Symbol":"for",
-      "Type": [ "controldeflujo", "palabrareservada" ],
-      "Description":"uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar" : false 
-    },
-    {
-      "Name":"If",
-      "Symbol":"if",
-      "Type": [ "condicion", "palabrareservada" ],
-      "Description":"ayuda a tomar desiciones",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar": false 
-    },
-    {
-      "Name": "Else",
-      "Symbol": "else",
-      "Type": [ "condicion", "palabrareservada" ],
-      "Description": "ayuda a tomar desiciones",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar": false
-    },
-    {
-      "Name": "Identificador",
-      "Symbol": "",
-      "Type": [ "Identificador" , "Variable"],
-      "Description": "nombran entidades del lenguaje",
-      "IsEnding": false,
-      "IsIrrelevant": false,
-      "IsChar": false
+      "name": "Identificador",
+      "symbol": "",
+      "type": [
+        "Identificador"
+      ],
+      "description": "nombran entidades del lenguaje",
+      "is_an_ending": false,
+      "is_a_separator": false,
+      "is_a_char": false
     }
-    
   ]
- }
+}

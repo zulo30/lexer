@@ -14,7 +14,7 @@ Trabajo de Lenguajes y Compiladores | Universidad EIA ![logo eia](https://github
 
 * Unity Testing | [http://www.throwtheswitch.org/unity](http://www.throwtheswitch.org/unity)
 * Libfort | [https://github.com/seleznevae/libfort](https://github.com/seleznevae/libfort)
-* cjson| [https://github.com/DaveGamble/cJSON](https://github.com/DaveGamble/cJSON)
+* cjson| [https://github.com/DaveGamble/cJSON](https://github.com/mnunberg/jsonsl)
 
 ### Importar un proyecto
 para bajar el proyecto:
