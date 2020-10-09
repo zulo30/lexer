@@ -55,17 +55,3 @@ void test_dequeue_all(void)
 
   TEST_ASSERT_EQUAL_STRING(expected, actual);
 }
-
-// Runs the test(s)
-// int main(void)
-// {
-//   UNITY_BEGIN();
-
-//   RUN_TEST(test_enqueue_item);
-//   RUN_TEST(test_dequeue_item);
-//   RUN_TEST(test_if_queue_is_full);
-//   RUN_TEST(test_if_queue_is_empty);
-//   RUN_TEST(test_dequeue_all);
-
-//   return UnityEnd();
-// }

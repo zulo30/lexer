@@ -18,13 +18,3 @@ void test_create_table(void)
   // source file src/hello_world.c.
   TEST_ASSERT_TRUE(1 < 2);
 }
-
-// Runs the test(s)
-// int main(void)
-// {
-//   UNITY_BEGIN();
-
-//   RUN_TEST(test_create_table);
-
-//   return UNITY_END();
-// }

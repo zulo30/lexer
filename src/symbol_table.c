@@ -30,7 +30,7 @@ const char *load_symbol_table(void)
   if (ferror(fp))
     puts("I/O error when reading");
   else if (feof(fp))
-    puts(" the file was readed successfully  :)");
+    puts("the table of symbols was loaded successful ...!");
 
   fclose(fp);
 
@@ -66,7 +66,9 @@ const char *print_symbol_table(void)
     types = cJSON_GetObjectItemCaseSensitive(symbol, "type");
 
     s = cJSON_Print(sym);
-    cJSON_ArrayForEach(type, types)
+    for (type = (types != NULL) ? (types)->child : NULL; type != NULL;
+         type = type->next)
+
     {
       const char *first_child_element = types->child->valuestring;
       const char *type_element = type->valuestring;
