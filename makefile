@@ -6,7 +6,7 @@ LIBS = -lm
 ALL_SRCS = $(wildcard src/*.c)
 ALL_SRCS += $(wildcard src/vendor/*.c)
 ALL_SRCS += $(wildcard src/utils/*.c)
-SRCS     = $(filter-out src/lexer.c, $(ALL_SRCS))
+SRCS     = $(filter-out src/main.c, $(ALL_SRCS))
 
 TEST_DIR = test
 TEST_RNS = test/test_runners
@@ -39,7 +39,7 @@ lexer: $(ALL_SRCS)
 	@$(CC) $(CFLAGS) $(ALL_SRCS)  -o lexer $(LIBS)
 
 .PHONY: test
-test: build/queue.test.out build/table.test.out
+test: build/queue.test.out build/table.test.out build/menu.test.out
 	@echo =======================
 	@echo Running Test Suites
 	@echo -----------------------
@@ -50,6 +50,10 @@ test: build/queue.test.out build/table.test.out
 	@echo  2.	Table Test Suite 
 	@echo -----------------------
 	@./build/table.test.out
+	@echo -----------------------
+	@echo  3.	Menu Test Suite 
+	@echo -----------------------
+	@./build/menu.test.out
 
 .PHONY: memcheck
 memcheck: test/*.c  $(SRCS) 

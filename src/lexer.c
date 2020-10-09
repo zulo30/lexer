@@ -5,10 +5,24 @@
 // #include "./vendor/cjson.h"
 // #include "./vendor/fort.h"
 #include "./symbol_table.h"
+#include <stdbool.h>
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 
 // bool is_terminated = false;
+int is_a_char_separator(char a)
+{
+  char separator_list[6] = {'.', '+', '-', '/', '*', '/'};
+  int size = sizeof separator_list / sizeof *separator_list;
+
+  bool res = false;
+  for (int i = 0; i < size; i++) {
+    res = res || (a == separator_list[i]) ? true : false;
+  }
+  return res;
+}
+int is_a_string_separator(char str[]) { return (strcmp(str, "==") == 0); }
 
 void print_menu()
 {
@@ -95,5 +109,3 @@ void cli(int argc, char *argv[])
     printf("there are %d and the 1st argument is the %s", argc, argv[1]);
   }
 }
-
-int main(int argc, char *argv[]) { cli(argc, argv); }
